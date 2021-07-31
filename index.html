@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Birthdate Palindrome checker</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Is Your Birthdate Palindrome?</h2>
+      <p>Enter your birthdate to check whether your birtdate is Palindrome?</p>
+      <form id="birtdateForm">
+        <label for="birthdate">Select your Birthdate:</label>
+        <input
+          required
+          type="date"
+          id="birthdate"
+          min="1900-01-01"
+          max="2025-12-31"
+        />
+
+        <input class="btn" id="btnCheck" type="submit" value="Check" />
+      </form>
+      <div class="result hidden">
+        <img class="imgResult" src="image/happy.svg" alt="" width="60" />
+        <span class="txtResult"> </span>
+      </div>
+      <footer>
+        <p>
+          <a href="https://manikandan.netlify.app">Manikandan</a>
+          |
+          <a href="/privacy.html">Know more</a>
+        </p>
+      </footer>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
